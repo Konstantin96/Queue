@@ -51,6 +51,6 @@ template <typename T>
 void Queue<T>::print() const
 {
 	for (int i = 0; i < elCT; i++)
-		cout << setw(4) << ptr[bgn + i >= sze ? bgn + i - sze : bgn + i];
+		cout <<  ptr[bgn + i >= sze ? bgn + i - sze : bgn + i];
 	cout << endl;
 }
